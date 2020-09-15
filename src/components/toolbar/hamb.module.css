@@ -1,0 +1,22 @@
+.icon{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+
+.line{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+
+}
+
+@media(min-width: 500px){
+    .icon{
+        display: none;
+    }
+}

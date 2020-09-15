@@ -1,0 +1,32 @@
+.burger {
+  width: 500px;
+  margin: 20px auto;
+  height: 350px;
+  font-weight: bolder;
+  text-align: center;
+  overflow: scroll;
+}
+.burger::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .burger {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .burger {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 350px) {
+  .burger {
+    width: 300px;
+    height: 200px;
+  }
+}

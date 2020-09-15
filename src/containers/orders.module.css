@@ -1,0 +1,15 @@
+.order {
+  padding: 20px;
+}
+
+.details > h1 {
+  border-bottom: 5px solid #5c9210;
+  width: fit-content;
+  font-weight: 800;
+}
+
+@media (max-width: 500px) {
+  .details > h1 {
+    font-size: 26px;
+  }
+}
