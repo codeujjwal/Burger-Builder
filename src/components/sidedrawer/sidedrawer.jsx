@@ -9,8 +9,11 @@ const sidedrawer = (props) => {
     <div>
       <Backdrop show={props.open} clicked={props.closed} />
       <div
+        onClick={props.closed}
         className={classes.sidedrawer}
-        style={{ transform: props.open ? "translateX(0%)" : "translateX(-100%)" }}
+        style={{
+          transform: props.open ? "translateX(0%)" : "translateX(-100%)",
+        }}
       >
         <div className={classes.logo}>
           <img src={burgerlogo} alt="my burger" />
@@ -19,8 +22,7 @@ const sidedrawer = (props) => {
           <Navigationitems />
         </nav>
         <div className={classes.about}>
-            <p>About website</p>
-
+          <p>About website</p>
         </div>
       </div>
     </div>

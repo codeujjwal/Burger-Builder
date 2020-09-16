@@ -4,12 +4,10 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore, compose } from "redux";
+import { createStore } from "redux";
 import reducer from "./redux/reducer";
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const store = createStore(reducer, composeEnhancers());
+const store = createStore(reducer);
 
 ReactDOM.render(
   <Provider store={store}>
